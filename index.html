@@ -9,6 +9,10 @@
   <title>Frontend Mentor | Intro section with dropdown navigation</title>
   <meta name="description" content="Intro section with dropdown navigation">
 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="./css/app.css">
   <script defer src="https://unpkg.com/alpinejs@3.9.6/dist/cdn.min.js"></script>
 </head>
@@ -43,13 +47,19 @@
     <div class="fixed inset-0 z-10 bg-black transition" :class="open ? 'visible opacity-70' : 'invisible opacity-0'" x-on:click="open = false"></div>
   </header>
 
-  <main class="max-w-screen-xl">
-    Make remote work
+  <main class="max-w-screen-xl pt-2">
+    <picture>
+      <source srcset="images/image-hero-desktop.png" media="(min-width: 992px)">
+      <img src="images/image-hero-mobile.png" alt="hero image">
+    </picture>
 
-    Get your team in sync, no matter your location. Streamline processes, 
-    create team rituals, and watch productivity soar.
+    <div class="py-12 px-3 text-center">
+      <h1 class="text-4xl font-bold tracking-[-0.015em] mb-4">Make remote work</h1>
 
-    Learn more
+      <p class="text-zinc-500 leading-relaxed mb-6">Get your team in sync, no matter your location. Streamline processes, create team rituals, and watch productivity soar.</p>
+
+      <a href="#" class="inline-block py-3 px-6 text-white bg-black rounded-[0.875rem]">Learn more</a>
+    </div>
   </main>
   
   <footer class="attribution hidden">
