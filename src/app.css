@@ -5,3 +5,7 @@
 [aria-expanded="true"] svg {
     transform: rotate(180deg);
 }
+
+[x-cloak] {
+  display: none !important;
+}
